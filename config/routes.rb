@@ -1,13 +1,15 @@
 Proj4::Application.routes.draw do
-  get "pages/home"
+  match '/home', :to => 'pages#home'
 
-  get "pages/sadmin"
+  match '/sadmin', :to => 'pages#sadmin'
 
-  get "pages/qadmin"
+  match '/qadmin', :to => 'pages#qadmin'
 
-  get "pages/take"
+  match '/take', :to => 'pages#take'
 
-  get "pages/results"
+  match '/results', :to => 'pages#results'
+  
+  root :to => 'pages#home'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
