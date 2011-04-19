@@ -1,4 +1,14 @@
 Proj4::Application.routes.draw do
+  get "pages/home"
+
+  get "pages/sadmin"
+
+  get "pages/qadmin"
+
+  get "pages/take"
+
+  get "pages/results"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
