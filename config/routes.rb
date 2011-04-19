@@ -1,4 +1,6 @@
 Proj4::Application.routes.draw do
+  get "survey/new"
+
   match '/home', :to => 'pages#home'
 
   match '/sadmin', :to => 'pages#sadmin'
