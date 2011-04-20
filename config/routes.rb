@@ -1,5 +1,7 @@
 Proj4::Application.routes.draw do
-  get "survey/new"
+  resources :users
+
+  match '/signup', :to => 'users#new'
 
   match '/home', :to => 'pages#home'
 
