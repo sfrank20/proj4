@@ -3,8 +3,6 @@ Proj4::Application.routes.draw do
 
   match '/signup', :to => 'users#new'
 
-  match '/home', :to => 'pages#home'
-
   match '/sadmin', :to => 'pages#sadmin'
 
   match '/qadmin', :to => 'pages#qadmin'
